@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import Contact from "./components/Contact";
+import Contacts from "./components/Contacts";
 import Header from "./components/Header";
 
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 class App extends Component {
@@ -9,12 +10,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header branding="ContactManager" />
-        <Contact
-          name="John Doe"
-          email="jdoe@hotmail.com"
-          phone="555-555-5555"
-        />
-        <Contact name="karen kay" email="kk@hotmail.com" phone="555-555-5555" />
+        <div className="container">
+          <Contacts />
+        </div>
       </div>
     );
   }
